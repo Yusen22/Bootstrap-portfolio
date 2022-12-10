@@ -1,10 +1,56 @@
 /* //GENERAL STYLES  */
 
 body {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 
 .row {
     border: 1px solid black;
 }
+
+
+/* NAV STYLES */
+
+.nav-main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+}
+
+.mainTitle {
+    display: flex;
+    width: auto;
+    padding-left: 50px;
+}
+
+#nameTitle,
+#jobTitle {
+    width: auto;
+    display: inline;
+    margin: 0;
+}
+
+#nameTitle {
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+
+#jobTitle {
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    font-size: 110%;
+}
+
+
+
+.navLinks {
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
