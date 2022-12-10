@@ -1,3 +1,10 @@
+/* //GENERAL STYLES  */
+
+body {
+    padding-top: 50px;
+}
+
+
 .row {
     border: 1px solid black;
 }
