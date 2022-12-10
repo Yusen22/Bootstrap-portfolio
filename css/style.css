@@ -9,6 +9,11 @@ body {
     border: 1px solid black;
 }
 
+.container {
+    margin: 0 auto;
+    min-width: 70%;
+}
+
 
 /* NAV STYLES */
 
@@ -52,5 +57,32 @@ body {
 .navLinks {
     justify-content: flex-end;
     padding-right: 50px;
+    font-size: 120%;
 }
+
+.navLinks li {
+padding: 0 20px;
+text-align: center;
+}
+
+.navLinks li:hover, 
+.navLinks li:focus {
+    background-color: aquamarine;
+}
+
+/* WORK STYLES */
+
+.workCard {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btm-work-img {
+    min-height: 300px;
+    width: auto;
+    padding: 10px;
+    border-radius: 13px;
+}
+
+
 
