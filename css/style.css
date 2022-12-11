@@ -135,8 +135,8 @@ h4 {
 }
 
 .wl-r {
-display: flex;
-justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .card-title {
@@ -254,7 +254,7 @@ justify-content: flex-end;
 
 .aboutSection {
     color: var(--portfolioSecondColor);
-    height:fit-content
+    height: fit-content
 }
 
 
@@ -263,7 +263,7 @@ justify-content: flex-end;
     margin-bottom: 40px;
     text-align: center;
     font-size: 300%;
-    border: 2px solid var(--portfolioSecondColor);
+    border: 5px solid var(--portfolioSecondColor);
     width: 99%;
     color: var(--portfolioThirdColor);
 }
@@ -276,7 +276,7 @@ justify-content: flex-end;
 }
 
 .aboutMeSection,
-.skillsSection  {
+.skillsSection {
     height: 500px;
     margin-top: 70px;
     display: flex;
@@ -289,7 +289,7 @@ justify-content: flex-end;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0
+    padding: 0;
     height: 100%;
 }
 
@@ -319,7 +319,7 @@ justify-content: flex-end;
 .aboutMeSection p {
     padding: 0 70px;
     line-height: 2.3;
-    font-size: calc(100% + 1vw);
+    font-size: calc(90% + 1vw);
 }
 
 strong {
@@ -330,9 +330,105 @@ strong {
 
 .signupSection {
     margin: 0 auto;
+    background-image: linear-gradient(to top right, var(--portfolioThirdColor) 60%, var(--portfolioFourthColor));
+
+}
+
+#update-text {
+    background-color: var(--portfolioPrimaryColor);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 50px;
+    margin: 0 auto;
+    border-radius: 30px;
+    font-size: 250%;
 }
 
 .sign-up-form {
-    width: 300px;
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--portfolioHoverColor);
+    padding: 40px;
+    width: 20%;
+    border-radius: 35px;
+    box-shadow: inset 0 0 10px black;
+}
+
+.sign-up-form label {
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+.sign-up-form input {
+    margin-bottom: 20px;
+}
+
+.sign-up-form small {
+    color: var(--portfolioPrimaryColor);
+    font-size: 110%;
+    margin-top: 50px;
+}
+
+/* CONTACT STYLES */
+
+
+
+
+.contactCol {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contactSection h3 {
+    margin-top: 50px;
+}
+
+.contactSection .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width:100%
+}
+
+.contactSection .card-body:hover {
+    background-color: var(--portfolioSecondColor);
+    transition: all 1s ease-in-out;
+}
+
+.contactSection .card-body:hover h5,
+.contactSection .card-body:hover a
+ {
+    color: var(--portfolioPrimaryColor);
+}
+
+
+.contactSection a {
+    color: var(--portfolioHoverColor);
+}
+
+.contact-item {
+    border: 5px solid var(--portfolioSecondColor);
+    background-color: var(--portfolioPrimaryColor);
+    width: 90%;
+    padding: 0;
+}
+
+.contact-item h5 {
+    text-transform: uppercase;
+    color: var(--portfolioSecondColor);
+    font-size: 170%;
+    color: var(--portfolioSecondColor);
+}
+
+
+/* FOOTER STYLES */
+
+#mainFooter {
+    background-color: var(--portfolioHoverColor);
+    text-align: center;
+    padding: 50px;
 }
