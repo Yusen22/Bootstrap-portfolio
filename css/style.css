@@ -4,9 +4,17 @@ body {
     padding-top: 100px;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 300%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
 
 .row {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .container {
@@ -61,11 +69,11 @@ body {
 }
 
 .navLinks li {
-padding: 0 20px;
-text-align: center;
+    padding: 0 20px;
+    text-align: center;
 }
 
-.navLinks li:hover, 
+.navLinks li:hover,
 .navLinks li:focus {
     background-color: aquamarine;
 }
@@ -75,14 +83,38 @@ text-align: center;
 .workCard {
     margin-top: 30px;
     margin-bottom: 30px;
+    box-shadow: inset 100px black;
+}
+
+.btmWorkCard {
+    min-height: 620px;
+
+}
+
+#folding-cards img {
+    padding: 20px
 }
 
 .btm-work-img {
-    min-height: 300px;
+    max-height: 500px;
     width: auto;
-    padding: 10px;
-    border-radius: 13px;
+    padding: 20px;
+    border-radius: 25px;
+    object-fit: cover;
 }
 
+#calc-img,
+#to-do-img {
+    min-height: 580px;
+}
 
+.workContent .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
 
+.card-title {
+    text-transform: uppercase;
+}
