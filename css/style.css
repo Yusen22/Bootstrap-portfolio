@@ -1,7 +1,7 @@
 /* //GENERAL STYLES  */
 
 body {
-    padding-top: 100px;
+   
 }
 
 h3 {
@@ -22,8 +22,24 @@ h3 {
     min-width: 70%;
 }
 
+/* JUMBO STYLES */
+
+.jumbotron {
+padding: 0;
+height: calc(100vh - 200px);
+}
+
+.jumbo-header {
+    padding-top: 50px;
+}
+
 
 /* NAV STYLES */
+
+#mainNav {
+    padding-bottom: 30px;
+}
+
 
 .nav-main-content {
     width: 100%;
@@ -31,7 +47,7 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px 0px 10px;
 }
 
 .mainTitle {
