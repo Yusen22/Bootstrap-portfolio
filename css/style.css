@@ -12,15 +12,16 @@
 /* //GENERAL STYLES  */
 
 body {
-   
+   background-color: var(--portfolioPrimaryColor);
 }
 
 h3 {
     text-transform: uppercase;
     font-size: 300%;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 50px;
+    color: var(--portfolioSecondColor);
 }
 
 
@@ -30,7 +31,7 @@ h3 {
 
 .container {
     margin: 0 auto;
-    min-width: 70%;
+    min-width: 75%;
 }
 
 /* JUMBO STYLES */
@@ -51,6 +52,8 @@ height: calc(100vh - 200px);
 
 #mainNav {
     padding-bottom: 30px;
+    background-color: var(--portfolioPrimaryColor);
+    color: var(--portfolioSecondColor);
 }
 
 
@@ -109,19 +112,45 @@ height: calc(100vh - 200px);
 
 /* WORK STYLES */
 
+
+
 .workCard {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 25px 0;
     box-shadow: inset 100px black;
+    padding: 0;
+}
+
+.workCard .card {
+    background-color: var(--portfolioPrimaryColor);
+    color: var(--portfolioSecondColor);
 }
 
 .btmWorkCard {
-    min-height: 620px;
+    min-height: 500px;
+    width: 98%;
+}
 
+.btm-work-l {
+margin-right: 10px;
+}
+
+.btm-work-r {
+margin-left: 20px;
+margin-right: 0px;
 }
 
 #folding-cards img {
     padding: 20px
+}
+
+.top-work-img {
+
+    height: 600px;
+    width: auto;
+    padding: 20px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .btm-work-img {
