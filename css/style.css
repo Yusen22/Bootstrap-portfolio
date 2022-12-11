@@ -4,30 +4,31 @@
     --portfolioPrimaryColor: rgb(12, 14, 24);
     --portfolioPrimaryColorFade: rgb(12, 14, 24, 0.3);
     --portfolioSecondColor: rgb(250, 230, 203);
-    --portfolioThirdColor: rgb(131, 138, 255);
+    --portfolioThirdColor: rgb(111, 134, 149);
+    --portfolioFourthColor: rgb(60, 122, 137);
     --portfolioHoverColor: rgb(177, 169, 158);
-  }
+}
 
 
 /* //GENERAL STYLES  */
 
 body {
-   background-color: var(--portfolioPrimaryColor);
+    background-color: var(--portfolioPrimaryColor);
 }
 
 h3 {
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 300%;
+    font-size: 450%;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
     color: var(--portfolioSecondColor);
 }
 
 h4 {
-font-size: 200%;
-text-transform: uppercase;
+    font-size: 200%;
+    text-transform: uppercase;
 }
 
 .mainContent a:hover {
@@ -44,12 +45,16 @@ text-transform: uppercase;
 /* JUMBO STYLES */
 
 .jumbotron {
-padding: 0;
-height: calc(100vh - 200px);
+    padding: 0;
+    height: calc(100vh - 200px);
 }
 
 .jumbo-header {
     padding-top: 50px;
+}
+
+.row {
+    padding: 80px 0;
 }
 
 
@@ -129,10 +134,24 @@ height: calc(100vh - 200px);
     padding: 0;
 }
 
+.wl-r {
+display: flex;
+justify-content: flex-end;
+}
+
+.card-title {
+    color: var(--portfolioFourthColor);
+}
+
+.workContent .row {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 .workCard .card {
-    color: var(--portfolioHoverColor);
+    color: var(--portfolioThirdColor);
     transition: all 1s ease-in-out;
     font-size: 110%;
     font-weight: bold;
@@ -140,7 +159,7 @@ height: calc(100vh - 200px);
 
 
 .workCard .card:hover {
-color: var(--portfolioSecondColor);
+    color: var(--portfolioSecondColor);
     background-color: rgba(109, 109, 204, 0.274);
     font-size: 111%;
 }
@@ -149,12 +168,12 @@ color: var(--portfolioSecondColor);
 .workCard .card img {
     opacity: 80%;
     transition: all 0.8s ease-in-out;
-    
+
 }
 
 
 .workCard .card:hover img {
-opacity: 1
+    opacity: 1
 }
 
 .top-card {
@@ -163,19 +182,11 @@ opacity: 1
 
 
 .btmWorkCard {
-    min-height: 500px;
+    min-height: 540px;
     width: 98%;
     padding-top: 0px !important;
 }
 
-.btm-work-l {
-margin-right: 10px;
-}
-
-.btm-work-r {
-margin-left: 20px;
-margin-right: 0px;
-}
 
 
 
@@ -186,12 +197,15 @@ margin-right: 0px;
 #seo {
     background-image: linear-gradient(to top left, rgb(12, 14, 24) 54%, rgb(31, 35, 54));
 }
+
 #pwsg {
     background-image: linear-gradient(to top right, rgb(12, 14, 24) 54%, rgb(31, 35, 54));
 }
+
 #calculator {
     background-image: linear-gradient(to top left, rgb(12, 14, 24) 54%, rgb(31, 35, 54));
 }
+
 #to-do {
     background-image: linear-gradient(to top right, rgb(12, 14, 24) 54%, rgb(31, 35, 54));
 }
@@ -204,11 +218,11 @@ margin-right: 0px;
     border-radius: 25px;
     object-fit: cover;
     object-position: top center;
-    
+
 }
 
 .btm-work-img {
-    max-height: 620px;
+    height: 620px;
     width: auto;
     padding: 20px;
     border-radius: 25px;
@@ -240,4 +254,85 @@ margin-right: 0px;
 
 .aboutSection {
     color: var(--portfolioSecondColor);
+    height:fit-content
+}
+
+
+.aboutSection h4 {
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 300%;
+    border: 2px solid var(--portfolioSecondColor);
+    width: 99%;
+    color: var(--portfolioThirdColor);
+}
+
+.toplines {
+    background-color: var(--portfolioSecondColor);
+    margin-top: 180px;
+    margin-bottom: 30px;
+    height: 2px;
+}
+
+.aboutMeSection,
+.skillsSection  {
+    height: 500px;
+    margin-top: 70px;
+    display: flex;
+    padding: 0px 100px;
+    flex-direction: column;
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0
+    height: 100%;
+}
+
+
+.carousel {
+    height: 300px;
+    width: 100%;
+    font-size: 300%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--portfolioThirdColor), var(--portfolioFourthColor));
+    box-shadow: 0 -0 .2em var(--portfolioHoverColor);
+}
+
+.carousel p {
+    text-shadow: var(--portfolioPrimaryColor) 1px 0 30px;
+}
+
+.aboutMeSection {
+    height: fit-content;
+}
+
+.aboutMeSection p {
+    padding: 0 70px;
+    line-height: 2.3;
+    font-size: calc(100% + 1vw);
+}
+
+strong {
+    color: var(--portfolioHoverColor)
+}
+
+/* SIGNUP STYLES */
+
+.signupSection {
+    margin: 0 auto;
+}
+
+.sign-up-form {
+    width: 300px;
+    margin: 0 auto;
 }
