@@ -1,3 +1,14 @@
+/* Variables */
+
+:root {
+    --portfolioPrimaryColor: rgb(12, 14, 24);
+    --portfolioPrimaryColorFade: rgb(12, 14, 24, 0.3);
+    --portfolioSecondColor: rgb(250, 230, 203);
+    --portfolioThirdColor: rgb(131, 138, 255);
+    --portfolioHoverColor: rgb(177, 169, 158);
+  }
+
+
 /* //GENERAL STYLES  */
 
 body {
@@ -32,6 +43,8 @@ height: calc(100vh - 200px);
 .jumbo-header {
     padding-top: 50px;
 }
+
+
 
 
 /* NAV STYLES */
