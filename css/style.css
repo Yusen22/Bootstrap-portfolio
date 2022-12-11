@@ -17,16 +17,23 @@ body {
 
 h3 {
     text-transform: uppercase;
+    font-weight: bolder;
     font-size: 300%;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     color: var(--portfolioSecondColor);
 }
 
 h4 {
-font-size: 230%;
+font-size: 200%;
+text-transform: uppercase;
 }
+
+.mainContent a:hover {
+    text-decoration: none;
+}
+
 
 
 .container {
@@ -122,10 +129,38 @@ height: calc(100vh - 200px);
     padding: 0;
 }
 
+
+
 .workCard .card {
     color: var(--portfolioHoverColor);
+    transition: all 1s ease-in-out;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+
+.workCard .card:hover {
+color: var(--portfolioSecondColor);
+    background-color: rgba(109, 109, 204, 0.274);
+    font-size: 111%;
+}
+
+
+.workCard .card img {
+    opacity: 80%;
+    transition: all 0.8s ease-in-out;
     
 }
+
+
+.workCard .card:hover img {
+opacity: 1
+}
+
+.top-card {
+    margin-bottom: 20px;
+}
+
 
 .btmWorkCard {
     min-height: 500px;
@@ -141,6 +176,8 @@ margin-right: 10px;
 margin-left: 20px;
 margin-right: 0px;
 }
+
+
 
 #folding-cards {
     background-image: linear-gradient(to top, rgb(12, 14, 24) 2%, rgb(31, 35, 54));
@@ -161,17 +198,17 @@ margin-right: 0px;
 
 
 .top-work-img {
-
     height: 600px;
     width: auto;
     padding: 20px;
     border-radius: 25px;
     object-fit: cover;
     object-position: top center;
+    
 }
 
 .btm-work-img {
-    max-height: 500px;
+    max-height: 620px;
     width: auto;
     padding: 20px;
     border-radius: 25px;
@@ -193,8 +230,17 @@ margin-right: 0px;
     flex-direction: column;
     align-items: center;
     padding-bottom: 40px;
+    padding-top: 30px;
 }
 
 .card-title {
-    text-transform: uppercase;
+   
+}
+
+
+
+/* ABOUT STYLES */
+
+.aboutSection {
+    color: var(--portfolioSecondColor);
 }
