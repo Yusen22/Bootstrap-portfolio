@@ -24,10 +24,10 @@ h3 {
     color: var(--portfolioSecondColor);
 }
 
-
-.row {
-    /* border: 1px solid black; */
+h4 {
+font-size: 230%;
 }
+
 
 .container {
     margin: 0 auto;
@@ -112,7 +112,9 @@ height: calc(100vh - 200px);
 
 /* WORK STYLES */
 
-
+.card {
+    border: none
+}
 
 .workCard {
     margin: 25px 0;
@@ -121,13 +123,14 @@ height: calc(100vh - 200px);
 }
 
 .workCard .card {
-    background-color: var(--portfolioPrimaryColor);
-    color: var(--portfolioSecondColor);
+    color: var(--portfolioHoverColor);
+    
 }
 
 .btmWorkCard {
     min-height: 500px;
     width: 98%;
+    padding-top: 0px !important;
 }
 
 .btm-work-l {
@@ -139,9 +142,23 @@ margin-left: 20px;
 margin-right: 0px;
 }
 
-#folding-cards img {
-    padding: 20px
+#folding-cards {
+    background-image: linear-gradient(to top, rgb(12, 14, 24) 2%, rgb(31, 35, 54));
 }
+
+#seo {
+    background-image: linear-gradient(to top left, rgb(12, 14, 24) 54%, rgb(31, 35, 54));
+}
+#pwsg {
+    background-image: linear-gradient(to top right, rgb(12, 14, 24) 54%, rgb(31, 35, 54));
+}
+#calculator {
+    background-image: linear-gradient(to top left, rgb(12, 14, 24) 54%, rgb(31, 35, 54));
+}
+#to-do {
+    background-image: linear-gradient(to top right, rgb(12, 14, 24) 54%, rgb(31, 35, 54));
+}
+
 
 .top-work-img {
 
@@ -164,6 +181,11 @@ margin-right: 0px;
 #calc-img,
 #to-do-img {
     min-height: 580px;
+}
+
+#folding-cards img {
+    padding: 20px;
+    border-radius: 75px;
 }
 
 .workContent .card-body {
