@@ -48,6 +48,7 @@ h4 {
 .container-fluid {
     padding: 0;
 }
+
 /* JUMBO STYLES */
 
 .jumbotron {
@@ -131,7 +132,7 @@ h4 {
 }
 
 .navbar-nav {
-color: white;
+    color: white;
 }
 
 .navLinks li {
@@ -147,7 +148,7 @@ color: white;
 .jumbo-header {
     height: 100%;
     position: relative;
-    
+
 }
 
 .jumbo-cont {
@@ -156,7 +157,7 @@ color: white;
     align-items: center;
 }
 
-.lead   {
+.lead {
     position: absolute;
     z-index: 5;
     right: 26%;
@@ -165,27 +166,29 @@ color: white;
     color: var(--portfolioPrimaryColor);
     text-transform: uppercase;
     text-align: center;
-    font-size: 3.2vw;
+    font-size: calc(15px + 3.2vw);
     font-weight: 900;
-    text-shadow: var(--portfolioSecondColor) 1px 0 10px;;
+    text-shadow: var(--portfolioSecondColor) 1px 0 10px;
+    
 }
 
 .lead-img-container {
     display: flex;
-    flex
 }
 
 #profile-img {
     position: absolute;
-    height: 30%;
-    top: 15%;
-    right: 44.5%;
-    left: 44.5%;
-    border: 25px solid var(--portfolioPrimaryColor)
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    top: 5%;
+    left: 0;
+    right: 0;
+    border: 20px solid var(--portfolioPrimaryColor);
 
 }
 
-#header-img { 
+#header-img {
     height: 92%;
     width: 100%;
     object-fit: cover;
@@ -258,6 +261,7 @@ color: white;
         background-image: none !important;
         margin: 0 auto;
     }
+
     .top-card {
         background-color: var(--portfolioPrimaryColorFade) !important;
         background-image: none !important;
@@ -266,7 +270,7 @@ color: white;
 
     .workContent .row {
         padding: 0;
-        
+
     }
 }
 
@@ -285,7 +289,7 @@ color: white;
 
 
 #folding-cards {
-    background-image: linear-gradient(to top, rgb(12, 14, 24), rgb(31, 35, 54) 98%) ;
+    background-image: linear-gradient(to top, rgb(12, 14, 24), rgb(31, 35, 54) 98%);
 }
 
 #seo {
@@ -416,7 +420,7 @@ color: white;
 .aboutMeSection p {
     padding: 25px 5vw;
     line-height: 2.3;
-    font-size: calc(12px + 1.1vw) ;
+    font-size: calc(12px + 1.1vw);
     text-align: center;
 }
 
@@ -431,7 +435,6 @@ strong {
     background-image: linear-gradient(to top right, var(--portfolioThirdColor) 60%, var(--portfolioFourthColor));
     margin: 0 auto;
     padding: 100px 20px
-
 }
 
 
@@ -498,7 +501,7 @@ strong {
     flex-direction: column;
     justify-content: space-around;
     margin: auto;
-    width:100%
+    width: 100%
 }
 
 .contactSection .card-body:hover {
@@ -507,8 +510,7 @@ strong {
 }
 
 .contactSection .card-body:hover h5,
-.contactSection .card-body:hover a
- {
+.contactSection .card-body:hover a {
     color: var(--portfolioPrimaryColor);
 }
 
