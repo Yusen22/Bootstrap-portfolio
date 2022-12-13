@@ -1,4 +1,4 @@
-# edX-Bootcamp-Portfolio Starter
+# Bootstrap-Portfolio
 
 
 ## Description
