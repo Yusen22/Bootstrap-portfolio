@@ -326,7 +326,7 @@ h4 {
     height: 300px;
     margin-top: 50px;
     width: calc(40px + 23vw);
-    font-size: calc(20px + 4vw);
+    font-size: calc(12px + 4vw);
     border-radius: 40px;
     display: flex;
     flex-direction: column;
